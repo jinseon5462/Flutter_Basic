@@ -38,9 +38,12 @@ class _MisoState extends State<Miso> {
             });
           },
           selectedItemColor: primaryColor,
+          selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+          unselectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
+          selectedFontSize: 12,
           unselectedItemColor: Colors.grey,
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
@@ -49,15 +52,15 @@ class _MisoState extends State<Miso> {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.list),
-              label: '홈',
+              label: '예약하기',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.redeem),
-              label: '홈',
+              label: '친구 추천',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person),
-              label: '홈',
+              label: '나의 정보',
             ),
           ],
         ),
