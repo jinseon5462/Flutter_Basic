@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miso/constant/color.dart';
 import 'package:miso/screen/first_screen.dart';
+import 'package:miso/screen/fourth_screen.dart';
 import 'package:miso/screen/second_screen.dart';
 import 'package:miso/screen/third_screen.dart';
 
@@ -25,6 +26,7 @@ class _MisoState extends State<Miso> {
             FirstScreen(),
             SecondScreen(),
             ThirdScreen(),
+            FourthScreen(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
