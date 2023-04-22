@@ -290,22 +290,27 @@ class FirstScreen extends StatelessWidget {
                           final name = menu["name"] ?? "이름";
                           final imgUrl = menu["imgUrl"] ?? "";
 
-                          return SizedBox(
-                            width: 128,
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                CircleAvatar(
-                                  radius: 52,
-                                  backgroundImage: NetworkImage(imgUrl),
-                                  backgroundColor: Colors.transparent,
-                                ),
-                                SizedBox(height: 5),
-                                Text(
-                                  name,
-                                  textAlign: TextAlign.center,
-                                )
-                              ],
+                          return GestureDetector(
+                            onTap: () {
+                              print("${index + 1}번째 음료 메뉴 클릭!");
+                            },
+                            child: SizedBox(
+                              width: 128,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  CircleAvatar(
+                                    radius: 52,
+                                    backgroundImage: NetworkImage(imgUrl),
+                                    backgroundColor: Colors.transparent,
+                                  ),
+                                  SizedBox(height: 5),
+                                  Text(
+                                    name,
+                                    textAlign: TextAlign.center,
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },

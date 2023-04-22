@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:starbucks/constant/color.dart';
 import 'package:starbucks/screen/first_screen.dart';
 import 'package:starbucks/screen/second_screen.dart';
+import 'package:starbucks/screen/third_screen.dart';
 
 class Starbucks extends StatefulWidget {
   const Starbucks({super.key});
@@ -21,6 +22,9 @@ class _StarbucksState extends State<Starbucks> {
         children: [
           FirstScreen(),
           SecondScreen(),
+          ThirdScreen(),
+          Center(child: Text("네번째 스크린")),
+          Center(child: Text("다섯번째 스크린")),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
